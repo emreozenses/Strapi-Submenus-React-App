@@ -257,3 +257,65 @@ ul {
 PROJECT CSS 
 =============== 
 */
+body{
+  background: var(--primary-500);
+}
+main{
+  max-height: 100vw;
+}
+.nav-center{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1.50rem 2rem;
+  
+}
+.nav-links{
+  display: flex;
+  visibility: hidden;
+}
+
+
+@media screen and (min-width:992px){
+.nav-links{
+  display: flex;
+  visibility: visible;
+}
+.toggle-btn{
+visibility: hidden;
+}
+}
+.logo{
+  color: var(--white);
+  text-transform: lowercase;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.20rem;
+}
+.toggle-btn{
+  background: var(--white);
+  border-color: transparent;
+  font-size: 0.9rem;
+  padding: 0.30rem 0.40rem;
+  border-radius: 0.25rem;
+  color: var(--primary-600);
+  cursor: pointer;
+  transition: 0.2s ease-in-out ;
+  
+ 
+}
+.toggle-btn:hover{
+scale: 1.1;
+}
+.nav-link{
+  background: transparent;
+  border-color: transparent;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  margin-left: 2rem;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+
+}
+
