@@ -260,9 +260,7 @@ PROJECT CSS
 body{
   background: var(--primary-500);
 }
-main{
-  max-height: 100vw;
-}
+
 .nav-center{
   display: flex;
   justify-content:space-between;
@@ -317,5 +315,29 @@ scale: 1.1;
   letter-spacing: 0.1rem;
   cursor: pointer;
 
+}
+.hero-container{
+min-height: calc(100vh - 5rem);
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.hero-center{
+color: var(--white);
+max-width: var(--max-width);
+width: 60vw;
+text-align: center;
+}
+.hero-center h1{
+  font-size: clamp(3rem, 5vw, 5rem);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+
+}
+.hero-center p{
+  line-height: 1.5;
 }
 
