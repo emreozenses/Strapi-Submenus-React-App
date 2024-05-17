@@ -282,6 +282,9 @@ body{
 .toggle-btn{
 visibility: hidden;
 }
+.show-sidebar-container{
+visibility: hidden !important;
+}
 }
 .logo{
   color: var(--white);
@@ -327,7 +330,7 @@ justify-content: center;
 .hero-center{
 color: var(--white);
 max-width: var(--max-width);
-width: 60vw;
+width: 70vw;
 text-align: center;
 }
 .hero-center h1{
@@ -339,5 +342,76 @@ text-align: center;
 }
 .hero-center p{
   line-height: 1.5;
+}
+.sidebar-container{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+
+}
+.show-sidebar-container{
+visibility: visible;
+z-index: 10;
+opacity: 1;
+transition-property: opacity;
+transition-duration: 1s;
+}
+.closeSidebar-btn{
+  position: fixed;
+  right: 3rem;
+  top: 2rem;
+  height: 20px;
+  width: 20px;
+  background: transparent;
+  color:var(--primary-600);
+  border-color: transparent;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.sidebar-container ul{
+  padding-top: 4rem;
+  padding-left: 2rem;
+  
+}
+
+.sidebar-container ul li h4{
+  color: var(--primary-600);
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.link{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+  margin-right: 7rem;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: capitalize;
+  background: transparent;
+  border: transparent;
+  color: var(--grey-500);
+  font-size: 1rem;
+  width:12rem;
+}
+.link a {
+  color: var(--grey-700);
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  letter-spacing: 0.05rem;
+}
+.link-container{
+  display: flex;
+  flex-wrap: wrap ;
+  align-items:baseline;
+  justify-content:flex-start;
+  margin-bottom: 2rem;
 }
 
