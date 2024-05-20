@@ -265,12 +265,17 @@ body{
   display: flex;
   justify-content:space-between;
   align-items: center;
-  padding: 1.50rem 2rem;
+  padding-top: 1.50rem ;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  align-self: stretch;
   
 }
 .nav-links{
   display: flex;
   visibility: hidden;
+  align-self: stretch;
+  padding-top: 1rem;
 }
 
 
@@ -292,6 +297,8 @@ visibility: hidden !important;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.20rem;
+  align-self: stretch;
+  padding-top: 1rem;
 }
 .toggle-btn{
   background: var(--white);
@@ -317,6 +324,7 @@ scale: 1.1;
   color: var(--white);
   letter-spacing: 0.1rem;
   cursor: pointer;
+  align-self: stretch;
 
 }
 .hero-container{
@@ -413,5 +421,62 @@ transition-duration: 1s;
   align-items:baseline;
   justify-content:flex-start;
   margin-bottom: 2rem;
+  
+}
+.submenu{
+  border-radius: var(--borderRadius);
+  color: var(--primary-700);
+  background: var(--white);
+  display: block;
+  position: fixed;
+  width:90vw;
+  left: 50%;
+  top: 6rem;
+  max-width: var(--max-width);
+  padding: 2rem;
+  transform: rotateX(-90deg) translateX(-50%);
+transform-origin: top;
+perspective: 1000px;
+visibility: hidden;
+opacity: 0;
+transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out ;
+z-index: -1;
+
+}
+.show-submenu{
+
+  visibility: visible;
+  opacity: 1;
+  transform: rotateX(0deg) translateX(-50%);
+  z-index: 10;
+}
+.submenu h5{
+margin-bottom: 1rem;
+}
+.sub-link-container{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.sub-link{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+  margin-right: 7rem;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: capitalize;
+  background: transparent;
+  border: transparent;
+  color: var(--grey-500);
+  font-size: 1rem;
+  width:12rem;
+}
+.sub-link a {
+  color: var(--grey-700);
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  letter-spacing: 0.05rem;
 }
 
